@@ -5,7 +5,7 @@ from flask import Flask, request, send_file,render_template
 app = Flask(__name__)
 
 @app.route("/")
-def index():
+def inicio():
     return send_file('src/index.html')
 
 @app.get("/form")
